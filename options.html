@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Test Extension Options</title>
+	<link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
+	<script src="/node_modules/material-design-lite/material.min.js"></script>
+	<link rel="stylesheet" href="/node_modules/material-design-icons/iconfont/material-icons.css">
+	<script src="/node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+	<form action="#">
+		<div class="mdl-textfield mdl-js-textfield">
+		    <input class="mdl-textfield__input" type="text" id="url">
+		    <label class="mdl-textfield__label" for="url">URL...</label>
+		</div>
+		<fieldset>
+			<legend><b>Timeout</b></legend>
+			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="5000" tabindex="0" id="timeout">
+		</fieldset>
+		<fieldset>
+			<legend><b>Interval</b></legend>
+			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="10000" tabindex="0" id="interval">
+		</fieldset>
+		<fieldset>
+			<legend><b>NbSamples</b></legend>
+			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="20" tabindex="0" id="nbSamples">
+		</fieldset>
+		<input type="button" id="save" value="Save">
+	</form>
+	<div id="status"/>
+	<div id="app">
+		{{ message }}
+	</div>
+
+<script src="options.js"></script>
+</body>
+</html>

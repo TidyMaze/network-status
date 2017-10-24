@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Network status indicator",
+  "description": "This extension allows the user to watch the network status.",
+  "version": "0.3.1",
+
+  "browser_action": {
+    "default_icon": "images/connected.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["eventPage.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "*://*/"
+  ],
+  "options_page": "options.html"
+}
