@@ -10,7 +10,7 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["eventPage.js"]
+    "scripts": ["optionsService.js", "eventPage.js"]
   },
   "permissions": [
     "activeTab",
